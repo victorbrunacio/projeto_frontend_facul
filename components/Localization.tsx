@@ -45,7 +45,7 @@ const Localization = () => {
             </div>
 
             <button className="w-[360px] h-10 p-2.5 bg-gradient-to-b from-blue-600 to-blue-800 rounded-[15px] justify-center items-center gap-2.5 inline-flex uppercase text-white text-xs font-bold 
-         hover:to-blue-600 transition hover:duration-300
+         hover:to-blue-600 transition hover:duration-150
             active:scale-95 active:to-blue-600/50 
             ">
                 VAMOS LÁ
