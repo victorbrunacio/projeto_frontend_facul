@@ -7,7 +7,7 @@ import VideoModal from '@/components/VideoModal'
 export default function Home() {
 
   return (
-    <main className='min-h-screen flex flex-col items-center justify-center bg-[#333333] gap-[5rem] '>
+    <main className='min-h-screen flex flex-col items-center justify-center bg-[#333333] gap-[5rem] box-border'>
      <hr />
       <Modal />
       <Localization />

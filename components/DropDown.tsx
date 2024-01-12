@@ -15,13 +15,12 @@ const DropDown = () => {
 
   return (
     <div className={`flex flex-col gap-5 ${openSans.className}`}>
-      <div className={`flex p-5 items-center justify-between w-[280px] h-[60px] rounded-[10px] shadow bg-black-1`}>
+      <div className={`flex p-5 items-center justify-between w-[280px] h-[60px] rounded-[10px] shadow bg-black-1 cursor-pointer`} onClick={toggleDropDown}>
         <span className="font-[700] text-[16px] text-white-1">
           Dropdown
         </span>
         <div
           className={`transform group transition-transform cursor-pointer  ${isOpen ? "rotate-90" : "-rotate-90"}`}
-          onClick={toggleDropDown}
         >
           <ArrowImg />
         </div>

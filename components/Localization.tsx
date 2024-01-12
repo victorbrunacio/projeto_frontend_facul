@@ -6,9 +6,9 @@ import { ArrowImg } from '@/public/exportSvg';
 const Localization = () => {
     const dataCountry: string[] = ['Brasil', 'Colômbia', 'Estados Unidos', 'Japão'];
 
-    const [selectedCountry, setSelectedCountry] = useState<string | null>(null);
+    const [selectedCountry, setSelectedCountry] = useState<string>('Brasil');
 
-    const handleCountryClick = (country: string )=> {
+    const handleCountryClick = (country: string) => {
         setSelectedCountry(country);
     };
 
@@ -20,7 +20,9 @@ const Localization = () => {
                         localização
                     </span>
                 </div>
-                <button className="flex border border-white rounded-[15px] h-[40px] w-[40px] p-2 items-center justify-center">
+                <button className="flex border border-white rounded-[15px] h-[40px] w-[40px] p-2 items-center justify-center
+                hover:border-2
+                ">
                     <ArrowImg />
                 </button>
             </div>
@@ -42,7 +44,10 @@ const Localization = () => {
                 })}
             </div>
 
-            <button className={`w-[360px] h-10 p-2.5 bg-gradient-to-b from-blue-600 to-blue-800 rounded-[15px] justify-center items-center gap-2.5 inline-flex uppercase text-white text-xs font-bold `}>
+            <button className="w-[360px] h-10 p-2.5 bg-gradient-to-b from-blue-600 to-blue-800 rounded-[15px] justify-center items-center gap-2.5 inline-flex uppercase text-white text-xs font-bold 
+         hover:to-blue-600 transition hover:duration-300
+            active:scale-95 active:to-blue-600/50 
+            ">
                 VAMOS LÁ
             </button>
         </div>
