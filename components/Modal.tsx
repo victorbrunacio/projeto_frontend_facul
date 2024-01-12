@@ -19,8 +19,8 @@ const Modal = () => {
         <div className={` ${openSans.className} text-xs flex gap-5`}>
 
           <button className="bg-gradient-to-b from-red-1 to-red-2 w-[120px] h-10 px-[30px] py-2.5 rounded-[15px] shadow justify-center items-center gap-2.5 font-bold uppercase 
-          hover:to-red-2/70
-          active:scale-90 transition-all
+         hover:to-red-1
+         active:to-red-2/70 active:scale-90 transition-all
           "
           >
             Abrir
